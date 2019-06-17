@@ -4,11 +4,26 @@ using namespace std;
 
 int main()
 {
-	int sum =0;
-	for(int value =0;  cin >> value; )
+	int a;
+	int b;
+	cin >> a;
+	cin >> b;
+
+	if ( a < b)
 	{
-		sum += value;
+		while(a <= b)
+		{
+			cout << a << endl;
+			++a;
+		}
+	}else
+	{
+		while( b <= a)
+		{
+			cout << b << endl;
+			++b;
+		}
 	}
-	cout << "Sum is " << sum << endl;
+
 	return 0;
 }

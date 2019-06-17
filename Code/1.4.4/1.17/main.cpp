@@ -4,11 +4,28 @@ using namespace std;
 
 int main()
 {
-	int sum =0;
-	for(int value =0;  cin >> value; )
+	int curval = 0, val =0;
+
+	if(cin >> curval)
 	{
-		sum += value;
+		int cnt = 1;
+		while(cin >> val)
+		{
+			if(val == curval)
+			{
+				++cnt;
+			}else
+			{
+				cout << curval << " occurs "
+					<< cnt << " times " << endl;
+				curval = val;
+				cnt =1;
+			}
+		}
+		cout << curval << " occurs "
+			<< cnt << " times " << endl;
 	}
-	cout << "Sum is " << sum << endl;
+
+
 	return 0;
 }
