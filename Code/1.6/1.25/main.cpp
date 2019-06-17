@@ -6,14 +6,15 @@ using namespace std;
 int main()
 {
 	Sales_item cur, val;
-	if(std::cin >> cur)
+	if (std::cin >> cur)
 	{
-		while(cin >> val)
+		while (cin >> val)
 		{
-			if(val.isbn() == cur.isbn())
+			if (val.isbn() == cur.isbn())
 			{
 				cur = cur + val;
-			}else
+			}
+			else
 			{
 				cout << cur << endl;
 				cur = val;
