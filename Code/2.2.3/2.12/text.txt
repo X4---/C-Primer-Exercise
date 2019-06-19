@@ -1,0 +1,10 @@
+
+
+//override declaration  = definition
+extern int ix = 1024;
+
+//declaration
+int xy;
+
+//declaration
+extern int iz;
