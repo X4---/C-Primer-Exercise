@@ -1,0 +1,6 @@
+which of the following are legal?
+
+a) const int buf;    // not legal       not ini
+b) int cnt = 0;      // legal
+c) const int sz = cnt; // legal
+d) ++cnt; ++ sz;     // ++sz not legal;
